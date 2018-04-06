@@ -1,0 +1,24 @@
+
+// ХЕЛПЕРЫ
+@import 'base/fonts.scss';
+@import 'base/vars.scss';
+
+
+// Общие стили
+@import 'base/settings.scss';
+@import 'base/general.scss';
+
+
+// Секции
+
+/* Стили секции header */
+@import 'section/header.scss';
+/* Стили секции header */
+
+/* Стили секции footer */
+@import 'section/footer.scss';
+/* Стили секции footer */
+
+
+// Компоненты
+@import "common/common.scss"
