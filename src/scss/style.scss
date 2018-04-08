@@ -19,6 +19,22 @@
 @import 'section/footer.scss';
 /* Стили секции footer */
 
+/* Стили секции nav */
+@import 'section/nav.scss';
+/* Стили секции nav */
+
+/* Стили секции bread */
+@import 'section/bread-crumbs.scss';
+/* Стили секции bread */
+
+/* Стили секции main */
+@import 'section/main.scss';
+/* Стили секции main */
+
+/* Стили секции price */
+@import 'section/price.scss';
+/* Стили секции price */
+
 
 // Компоненты
 @import "common/common.scss"

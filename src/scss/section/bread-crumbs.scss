@@ -1,0 +1,28 @@
+.main__bread-crumbs {
+    display: flex;
+    margin-bottom: rem(20px);
+}
+
+.main__bread-crumb {
+    margin-right: rem(25px);
+    font-size: rem(14px);
+    color: #333333;
+    font-family: Arial;
+}
+
+.no-active {
+    position: relative;
+}
+
+.no-active:before {
+    content: "/";
+    display: block;
+    position: absolute;
+    left: rem(-15px);
+    font-size: rem(16px);
+}
+
+.active {
+    text-decoration: underline;
+    cursor: pointer;
+}

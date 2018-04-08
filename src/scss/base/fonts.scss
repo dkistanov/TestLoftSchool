@@ -127,3 +127,10 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'TextPro';
+    src: url('../fonts/TextPro/subset-PFDinTextPro-Medium.woff2') format('woff2'),
+        url('../fonts/TextPro/subset-PFDinTextPro-Medium.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}

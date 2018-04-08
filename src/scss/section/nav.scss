@@ -1,0 +1,27 @@
+.arrow-down {
+    width: rem(20px);
+    height: rem(14px);
+    padding-left: rem(10px);
+}
+
+.nav__list {
+    display: flex;
+    height: rem(53px);
+    margin-bottom: rem(50px);
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,#92c8e1, #b2daed);
+    padding: 0 rem(10px) 0 rem(20px);
+    text-transform: uppercase;
+    font-family: 'BeauSansPro';
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.nav__item:first-child {
+    flex-grow: 1;
+}
