@@ -1,4 +1,4 @@
-.buttons {
+.button {
     text-transform: uppercase;
     padding: rem(7px) rem(10px);
     background-color: #17709a;
@@ -6,4 +6,5 @@
     border-radius: 3px;
     font-size: rem(12px);
     line-height: rem(16px);
+    cursor: pointer;
 }

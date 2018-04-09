@@ -1,0 +1,76 @@
+.modal {
+    position: absolute;
+    bottom: 200px;
+
+    background-color: white;
+    padding: 0px 30px 15px; 
+    display: flex;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 13px rgba($color: #000000, $alpha: 0.25);
+}
+
+.modal__title {
+    color: #006599;
+    font-family: 'TextPro';
+    font-weight: bold;
+    font-style: normal;
+    font-size: rem(15px);
+    line-height: rem(45px);
+}
+
+.modal__calc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial;
+    font-size: rem(14px);
+    padding: rem(1px) 0 10px 0;
+}
+
+.button.button_modal {
+    padding: 2px 0px;
+    width: rem(20px);
+    height: rem(20px);
+    font-size: 14px;
+    border-radius: 0;
+    background-color: #559abc;
+}
+
+#modal__quantity {
+    margin: 0 8px;
+    height: rem(28px);
+    width: rem(60px);
+    box-shadow: inset 0 0 5px rgba($color: #090c12, $alpha: 0.24)
+}
+
+.modal__price {
+    margin-right: rem(20px);
+}
+
+.modal__final-price {
+    margin-left: rem(10px);
+}
+
+.button.save,.button.exit {
+    padding: 0;
+    background-color: #fff;
+    color: #006296;
+    font-size: 12px;
+    font-family: 'TextPro';
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 98, 150);
+    border-bottom: 1px solid #006296;
+    line-height: 1.2;
+    border-radius: 0px;
+}
+
+.button.exit {
+    color: #333333;
+    margin-left: rem(20px);
+    border-bottom: 1px solid #333333;
+}
+
+

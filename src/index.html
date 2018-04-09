@@ -18,7 +18,7 @@
         </div>
         <div class="header__search">
           <input type="text" class="header__entry-field">
-          <button class="buttons" type="submit">Поиск</button>
+          <button class="button" type="submit">Поиск</button>
         </div>
       </header>
       <nav class="nav">
@@ -100,6 +100,20 @@
                     <div class="main__good-price">990 Р</div>
                     <input class="main__good-quantity" value="1">
                     <div class="main__good-final-price">990 Р</div>
+                  </div> 
+                  <div class="modal">
+                    <h3 class="modal__title">Изменить количество</h3>
+                    <div class="modal__calc">
+                      <span class="modal__price">50 450</span>
+                      <button class="button button_modal">-</button>
+                      <input class="main__good-quantity" value="1" id="modal__quantity">
+                      <button class="button button_modal">+</button>
+                      <span class="modal__final-price">6 950 450 Р</span>
+                    </div>
+                    <div class="buttons">
+                      <button class="button save">Сохранить</button>
+                      <button class="button exit">Отменить</button>
+                    </div>
                   </div>
                 </li>
                 <li class="main__item">

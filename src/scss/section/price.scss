@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: flex-end;
     color: #626262;
+    position: relative;
     padding-right: rem(20px)
 }
 
@@ -40,6 +41,21 @@
     color: #0a7eb5;
     margin-top: rem(14px);
     text-transform: uppercase;
+    position: relative;
+}
+
+.main__price::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 87px;
+    left: 0;
+    width: rem(1030px);
+    height: 1px;;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
 }
 
 .bold {
