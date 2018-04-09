@@ -1,5 +1,8 @@
+$('.main__check').on('click', function(){
+    $('.highlighting__num').text($('.main__checkbox:checked').length) 
+})
 
-let name = 'User Name';
-let place = 'Flavortown';
-
-console.log( `Hello ${name}, ready for ${place}?` );
+$('.main__highlighting-right').on('click', function(){
+    $('.main__checkbox').prop('checked', false)
+    $('.highlighting__num').text($('.main__checkbox:checked').length) 
+})
