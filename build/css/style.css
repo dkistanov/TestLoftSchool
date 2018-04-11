@@ -409,6 +409,7 @@ body {
   align-items: center;
   height: 4.6875rem;
   font-family: Arial;
+  position: relative;
   font-size: 0.875rem;
 }
 
@@ -550,6 +551,7 @@ body {
   cursor: pointer;
   -webkit-box-shadow: inset 0 0 5px rgba(9, 12, 18, 0.12);
   box-shadow: inset 0 0 5px rgba(9, 12, 18, 0.12);
+  background-color: #fff;
 }
 
 .main__good-final-price {
@@ -674,7 +676,8 @@ body {
 
 .modal {
   position: absolute;
-  bottom: 200px;
+  top: 50px;
+  right: -43px;
   background-color: white;
   padding: 0px 30px 15px;
   display: -webkit-box;
@@ -690,6 +693,7 @@ body {
   justify-content: space-between;
   -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 13px rgba(0, 0, 0, 0.25);
+  display: none;
 }
 
 .modal__title {
@@ -725,7 +729,7 @@ body {
   background-color: #559abc;
 }
 
-#modal__quantity {
+.main__good-quantity.modal__quantity {
   margin: 0 8px;
   height: 1.75rem;
   width: 3.75rem;

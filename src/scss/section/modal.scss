@@ -1,7 +1,7 @@
 .modal {
     position: absolute;
-    bottom: 200px;
-
+    top: 50px;
+    right: -43px;
     background-color: white;
     padding: 0px 30px 15px; 
     display: flex;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 13px rgba($color: #000000, $alpha: 0.25);
+    display: none;
 }
 
 .modal__title {
@@ -38,7 +39,7 @@
     background-color: #559abc;
 }
 
-#modal__quantity {
+.main__good-quantity.modal__quantity {
     margin: 0 8px;
     height: rem(28px);
     width: rem(60px);
