@@ -739,6 +739,15 @@ body {
 
 .modal__price {
   margin-right: 1.25rem;
+  position: relative;
+}
+
+.modal__price::after {
+  content: "x";
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 0px;
 }
 
 .modal__final-price {

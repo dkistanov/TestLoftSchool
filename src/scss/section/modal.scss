@@ -48,6 +48,14 @@
 
 .modal__price {
     margin-right: rem(20px);
+    position: relative;
+    &::after {
+        content: "x";
+        display: block;
+        position: absolute;
+        right: -12px;
+        top: 0px;
+    }
 }
 
 .modal__final-price {

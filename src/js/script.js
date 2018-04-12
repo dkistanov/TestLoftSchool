@@ -6,8 +6,9 @@ $('.main__check').on('click', function(){
 })
 
 $('.main__highlighting-right').on('click', function(){
-    $('.main__checkbox').prop('checked', false);
+    $('.main__checkbox:checked').closest('.main__item').remove()
     $('.highlighting__num').text($('.main__checkbox:checked').length) 
+    totalPrice();
 })
 
 // калькулятор 
@@ -21,7 +22,7 @@ $(document).on('keyup', function(){
     totalPrice();
     modalPrice();
     $('.price').each(function() {
-        $(this).parent().next().next().text(parseInt($(this).text(), 10) * $(this).parent().next($('main__good-quantity')).val())
+        $(this).parent().next().next().children('.final-price').text(parseInt($(this).text(), 10) * $(this).parent().next($('main__good-quantity')).val())
      });   
 })
 
@@ -115,7 +116,7 @@ function totalPrice() {
     })
     $('.total_price').children('.total_price_num').text(x);
     var y = 0;
-    y = parseInt($('.total_price_num').text(), 10) / 100 * 18;
+    y = Math.round(parseInt($('.total_price_num').text(), 10) / 100 * 18)
     $('.vat_num').text( y );
     $('.bold_total').text( x + y + " Р")
 }
