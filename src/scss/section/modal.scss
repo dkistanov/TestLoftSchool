@@ -1,15 +1,18 @@
-.modal {
+.modal-wrap {
     position: absolute;
     top: 50px;
     right: -43px;
     background-color: white;
-    padding: 0px 30px 15px; 
     display: flex;
     z-index: 1000;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 0 13px rgba($color: #000000, $alpha: 0.25);
     display: none;
+}
+
+.modal {
+    padding: 0px 30px 15px; 
 }
 
 .modal__title {

@@ -56,13 +56,13 @@ $('.main__good-quantity').on('click', function(e){
 })
 
 $('.button.exit').on('click',function(){
-    $(this).closest('.modal').css("display", "none")
+    $(this).closest('.modal-wrap').css("display", "none")
 })
 
 $(document).mouseup(function (e) {
     modalPrice();
     totalPrice();
-    var modal = $(".modal");
+    var modal = $(".modal-wrap");
     if (modal.has(e.target).length === 0){
         modal.css("display", "none")
     }
@@ -102,10 +102,10 @@ $('.modal__price').each(function() {
  // modal save 
 
  $('.button.save').on('click', function(){
-    $(this).closest('.modal').prev().children('.main__good-quantity').val($(this).closest('.modal').children('.modal__calc').children('.main__good-quantity.modal__quantity').val());
-    $(this).closest('.modal').prev().children('.main__good-final-price').children('.final-price').text($(this).closest('.modal').children('.modal__calc').children('.modal__final-price').children('.final-price_modal').text());
+    $(this).closest('.modal-wrap').prev().children('.main__good-quantity').val($(this).closest('.modal').children('.modal__calc').children('.main__good-quantity.modal__quantity').val());
+    $(this).closest('.modal-wrap').prev().children('.main__good-final-price').children('.final-price').text($(this).closest('.modal').children('.modal__calc').children('.modal__final-price').children('.final-price_modal').text());
     totalPrice();
-    $(this).closest('.modal').css("display", "none")
+    $(this).closest('.modal-wrap').css("display", "none")
 })
 
  // total price
@@ -123,6 +123,11 @@ function totalPrice() {
  
 totalPrice();
 
+
+// good number 
+$('.main__numbering').each(function (index){
+    $(this).text(++index);
+})
 
 
 

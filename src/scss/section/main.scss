@@ -146,6 +146,11 @@
     align-items: center;
 }
 
+.main__good-img {
+    max-width: rem(70px);
+    max-height: rem(70px);
+}
+
 .main__good-name__wrap {
     width: rem(630px);
     padding-left: rem(30px);
